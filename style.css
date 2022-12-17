@@ -119,7 +119,7 @@ html {
     height: inherit;
     position: absolute;
     top: 0;
-    background-color: rgba(255, 82, 82, .2);
+    background-color: rgba(0, 0, 0, 0.112);
     z-index: 99;
     transition: 0.45s;
     cursor: pointer;
@@ -137,7 +137,7 @@ html {
 .container .slide_img .prev:hover,
 .container .slide_img .next:hover {
     transition: 0.3s;
-    background-color: rgba(255, 82, 82, .8);
+    background-color: rgba(247, 243, 243, 0.8);
 }
 
 .container .slide_img .prev span,
