@@ -1,29 +1,25 @@
 @font-face {
     font-family: myFirstFont;
     src: url("font/tanpearl.ttf");
-  }
-  
-  :root {
+}
+
+:root {
     --bg-color: #10101a;
-    --main-color: #2fbf71;
+    --main-color: #655eac;
     --2nd-main-color: #ffffffcc;
     --text-color: #fff;
     --big-font: 5rem;
     --h2-font: 1.9rem;
     --p-font: 1rem;
-  }
+}
 
 body {
     font-family: myFirstFont;
     margin: 0;
     width: 100%;
     padding: 0;
-}
-.slide{
-        background: rgb(250,249,255);
-background: radial-gradient(circle, rgba(250,249,255,0) 44%, rgba(226,151,254,0.8578781854538691) 95%);
-}
 
+}
 
 * {
     font-family: myFirstFont;
@@ -54,15 +50,21 @@ hr {
     visibility: hidden;
 }
 
+.slide {
+    background: rgb(250, 249, 255);
+    background: radial-gradient(circle, rgba(250, 249, 255, 0) 44%, rgba(226, 151, 254, 0.8578781854538691) 95%);
+}
+
 .bt {
     font-family: cursive;
-    color: #ffffff;
     font-size: 23px;
     padding: 23px;
-    background: #A483CE;
     text-decoration: none;
-    border: none;
-    filter: drop-shadow(1px 1px 15px rgba(85, 81, 81, 0.556));
+    font-weight: 600;
+    border-radius: 9px;
+    background: #655eac;
+    color: var(--text-color);
+    box-shadow: 6px 6px var(--text-color);
 }
 
 .center {
@@ -71,7 +73,9 @@ hr {
 }
 
 .bt:hover {
-    background: #079aff;
+    background: var(--text-color);
+    color: #655eac;
+    box-shadow: 4px 4px var(--main-color);
     text-decoration: none;
 }
 
@@ -92,8 +96,7 @@ html {
 .container {
     margin: 0 auto;
     position: relative;
-    width: 70%;
-    height: 15%;
+    width: 100%;
     padding-bottom: 40%;
     user-select: none;
     background-color: #1c1c1c;
@@ -122,7 +125,7 @@ html {
     height: inherit;
     position: absolute;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.112);
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 99;
     transition: 0.45s;
     cursor: pointer;
@@ -201,9 +204,11 @@ html {
 .container #nav_slide #dot4:hover {
     background: #4caf50;
 }
+
 .container #nav_slide #dot5:hover {
     background: #8a6204;
 }
+
 .container #nav_slide #dot6:hover {
     background: #10058f;
 }
@@ -233,9 +238,11 @@ html {
 #i4:checked~#nav_slide #dot4 {
     background: #d1069e;
 }
+
 #i5:checked~#nav_slide #dot5 {
     background: #dbea0e;
 }
+
 #i6:checked~#nav_slide #dot6 {
     background: #6e0483;
 }
@@ -249,33 +256,36 @@ html {
         opacity: 1;
     }
 }
+.mobileview{
+    display: none;
+}
 .contact {
     background-image: url(back.png);
     margin: 0;
     height: 725px;
     text-align: center;
-  }
-  
-  .contact-form {
+}
+
+.contact-form {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1.2rem;
-  }
-  
-  .contact-form form {
+}
+
+.contact-form form {
     position: relative;
     width: 550px;
-  }
-  
-  .contact a {
+}
+
+.contact a {
     padding-right: 20px;
     font-size: 25px;
     color: white;
-  }
-  
-  form input,
-  form textarea {
+}
+
+form input,
+form textarea {
     width: 100%;
     padding: 20px;
     border: none;
@@ -284,74 +294,91 @@ html {
     color: var(--text-color);
     margin-bottom: 0.5rem;
     border-radius: 5px;
-  }
-  
-  form input::placeholder,
-  form textarea::placeholder {
+}
+
+form input::placeholder,
+form textarea::placeholder {
     color: var(--2nd-main-color);
-  }
-  
-  textarea {
+}
+
+textarea {
     resize: none;
     height: 200px;
-  }
-  
-  form .send-btn {
-    background: var(--main-color);
+}
+
+form .send-btn {
+    background: #655eac;
     color: var(--text-color);
-    box-shadow: 4px 4px var(--text-color);
+    box-shadow: 6px 6px var(--text-color);
     padding: 0 25px;
     line-height: 42px;
     display: inline-block;
     border: 1px solid transparent;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 900;
     letter-spacing: 2px;
     transition: ease all 0.3s;
     cursor: pointer;
     width: 587px;
-  }
-  
-  form .send-btn:hover {
+}
+
+form .send-btn:hover {
     background: var(--text-color);
-    color: var(--main-color);
+    color: #655eac;
     box-shadow: 4px 4px var(--main-color);
-  }
-  
-  .contact h1 {
-    text-align:center;
+}
+
+.contact h1 {
+    text-align: center;
     color: white;
     padding-top: 25px;
     padding-bottom: 8px;
     font-size: 3rem;
     font-weight: bold;
     margin: 0;
-  }
-  
-  .contact h6 {
+}
+
+.contact h6 {
     text-align: center;
     color: white;
     padding: 10px;
     font-size: 1rem;
     text-decoration: underline;
     margin: 0;
-  }
-  footer{
+}
+
+footer {
     text-align: right;
-  }
-  footer a{
-    font-family:monospace;
-  }
-  footer a:hover{
+}
+
+footer a {
+    font-family: monospace;
+}
+
+footer a:hover {
     color: #3eff96;
-  }
-  
+}
+@media screen and (max-width: 820px){
+    .land h1 {
+        font-size: 8rem;
+        padding-left: 10px;
+        font-weight: 500;
+    }
+    .land h2 {
+        margin-left: 12px;
+        font-size: 28px;
+    }
+}
+
+
+
 @media screen and (max-width: 685px) {
     .container {
-        border: none;
-        width: 100%;
+        display: none;
     }
-
+    .mobileview{
+        display: inline;
+    }
     .container .slide_img .prev,
     .container .slide_img .next {
         width: 15%;
@@ -374,47 +401,61 @@ html {
         width: 12px;
         height: 12px;
     }
-    .land h1{
+
+    .land h1 {
         font-size: 4rem;
         padding-left: 10px;
         font-weight: 500;
     }
-    .land h2{
+
+    .land h2 {
         margin-left: 12px;
         font-size: 18px;
     }
-    .center{
+
+    .center {
         margin-top: 300px;
     }
-    .contact-form{
-    }
+
+    .contact-form {}
+
     .contact-form form {
-        width: 300px;
+        width: 270px;
         padding-right: 40px;
-      }
-    form .send-btn{
-        width: 340px;
     }
-    .contact h1{
+
+    form .send-btn {
+        width: 305px;
+    }
+
+    .mobileview-image {
+        width:100%;
+        height:35%;
+    }
+
+    .contact h1 {
         padding-right: 20px;
         padding-left: 20px;
         font-size: 2rem;
     }
-    .contact h6{
+
+    .contact h6 {
         display: none;
     }
-    .bt{
+
+    .bt {
         font-size: 18px;
         padding: 15px;
     }
-    footer{
+
+    footer {
         height: 20px;
         padding-top: 5px;
         padding-bottom: 5px;
         text-align: center;
     }
-    footer a{
+
+    footer a {
         font-size: 0.5rem;
     }
 }
-
