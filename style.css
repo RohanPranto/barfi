@@ -64,7 +64,7 @@ hr {
     border-radius: 9px;
     background: #655eac;
     color: var(--text-color);
-    box-shadow: 3px 3px 8px #3e3b3b;
+    box-shadow: 1px 1px 8px #3e3b3b;
 }
 
 .center {
