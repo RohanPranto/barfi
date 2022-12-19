@@ -307,7 +307,6 @@ textarea {
 form .send-btn {
     background: #655eac;
     color: var(--text-color);
-    box-shadow: 6px 6px var(--text-color);
     padding: 0 25px;
     line-height: 42px;
     display: inline-block;
@@ -317,7 +316,7 @@ form .send-btn {
     letter-spacing: 2px;
     transition: ease all 0.3s;
     cursor: pointer;
-    width: 587px;
+    width: 590px;
 }
 
 form .send-btn:hover {
@@ -427,8 +426,8 @@ footer a:hover {
     }
 
     .mobileview-image {
-        width:100%;
-        height:35%;
+       width:100%;
+        height:40%;
     }
 
     .contact h1 {
