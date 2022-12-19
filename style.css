@@ -95,7 +95,7 @@ html {
 .container {
     margin: 0 auto;
     position: relative;
-    width: 85%;
+    width: 80%;
     padding-bottom: 40%;
     user-select: none;
     background-color: #000000;
@@ -234,7 +234,7 @@ html {
 }
 
 #i4:checked~#nav_slide #dot4 {
-    background: #d1069e;
+    background: #06d106;
 }
 
 #i5:checked~#nav_slide #dot5 {
@@ -258,7 +258,7 @@ html {
     display: none;
 }
 .contact {
-    background-image: url(back.png);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1600' height='900' preserveAspectRatio='none' viewBox='0 0 1600 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1292%26quot%3b)' fill='none'%3e%3crect width='1600' height='900' x='0' y='0' fill='rgba(96%2c 92%2c 169%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c468 C 106.8%2c443.6 320.4%2c322.8 534%2c346 C 747.6%2c369.2 854.8%2c575.4 1068%2c584 C 1281.2%2c592.6 1493.6%2c428 1600%2c389L1600 900L0 900z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1292'%3e%3crect width='1600' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     margin: 0;
     height: 725px;
     text-align: center;
@@ -348,12 +348,16 @@ footer {
     text-align: right;
 }
 
-footer a {
+.contact footer a {
     font-family: monospace;
+    font-weight: 900;
+    font-size:18px;
+    text-decoration:none;
+    color:#655eac;
 }
 
 footer a:hover {
-    color: #3eff96;
+    color: #d80587;
 }
 @media screen and (max-width: 820px){
     .land h1 {
@@ -426,7 +430,7 @@ footer a:hover {
     }
 
     .mobileview-image {
-       width:100%;
+        width:100%;
         height:40%;
     }
 
